@@ -2,10 +2,9 @@
 
 import math
 import json
-import logging
 
 from django.contrib.auth.models import Group, User
-from rest_framework import viewsets, permissions, views, status
+from rest_framework import viewsets, permissions, status
 from rest_framework.decorators import detail_route
 from rest_framework.response import Response
 
