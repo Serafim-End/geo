@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'geo_app',
     'oauth2_provider',
+    'rest_framework_docs',
+    'rest_framework_swagger',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,6 +123,11 @@ REST_FRAMEWORK = {
 OAUTH2_PROVIDER = {
     # this is the list of available scopes
     'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'}
+}
+
+
+REST_FRAMEWORK_DOCS = {
+    'HIDE_DOCS': False
 }
 
 
