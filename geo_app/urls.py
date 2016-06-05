@@ -14,10 +14,6 @@ router.register('actions', views.ActionViewSet)
 router.register('scenarios', views.ScenarioViewSet)
 router.register('devices', views.DeviceViewSet)
 
-with open('test.txt', 'a+') as rf:
-    rf.writelines(str(router.urls))
-
-
 urlpatterns = [
     url(r'^', include(router.urls)),
 ]
